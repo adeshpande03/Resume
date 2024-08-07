@@ -1,0 +1,255 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{3.60004pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Akhil Deshpande} \\ \vspace{1pt}
+    \small +1 (214) 449-5510 $|$ \href{deshpandeakhils@gmail.com}{\underline{deshpandeakhils@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/akhil-deshpande/}{\underline{linkedin.com/in/akhil-deshpande}} $|$
+    \href{https://github.com/adeshpande03}{\underline{github.com/adeshpande03}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Austin}{Austin, TX}
+      {Bachelor of Science in Computational Physics, Certification in Computing}{08/2021 - 05/2024}
+    
+  \resumeSubHeadingListEnd
+    %-----------EXPERIENCE-----------
+    \section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Software Engineer Intern}{05/2023 - 09/2023}
+    {Visa Inc.}{Austin, TX}
+    \resumeItemListStart
+    \resumeItem{Independently created and managed a Flask application that reduced a manual process runtime by 90\%}
+    \resumeItem{Used paramiko and oracleDB to automate SSH connection, Kafka messaging, and database validation}
+    \resumeItem{Implemented JSON validation within a fast and reliable UI element to highlight sources of error}
+    \resumeItem{Used the atexit and logging libraries to accurately and efficiently generate log files with results of each sent payload}
+    \resumeItem{Wrote independent documentation and test code, as well as Wiki pages to integrate project with current team}
+    \resumeItemListEnd
+      \resumeSubheading
+        {Undergraduate Teaching Assistant}{09/2022 - Present}
+        {University of Texas at Austin}{Austin, TX}
+        \resumeItemListStart
+        \resumeItem{Influenced the development and delivery of 100+ course materials, including lectures, assignments, and exams}
+        \resumeItem{Led weekly discussion sections and lab sessions, providing individualized support to 30+ students per session}
+        \resumeItem{Graded 60+ assignments per week, exams, and projects, providing timely and detailed feedback to students}
+        %\resumeItem{Conducted six hours of office hours per week, helping students with programming concepts, debugging code, and understanding course material}
+        %\resumeItem{Improved online tools such as Zoom, Piazza, and Gradescope to facilitate remote teaching and learning for 600+ students}
+        %\resumeItem{Demonstrated strong communication skills and a commitment to helping students succeed in their studies}
+        \resumeItem{Collaborated with a professor and 15 other teaching assistants to identify and address areas of difficulty for dozens of students, and reinforced strategies to improve overall learning experience}
+        \resumeItemListEnd
+        
+  % -----------Multiple Positions Heading-----------
+  %    \resumeSubSubheading
+  %     {Software Engineer I}{Oct 2014 - Sep 2016}
+  %     \resumeItemListStart
+  %        \resumeItem{Apache Beam}
+  %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %     \resumeItemListEnd
+  %    \resumeSubHeadingListEnd
+  %-------------------------------------------
+  
+      \resumeSubheading
+        {Software Engineer Intern}{05/2022 - 08/2022}
+        {Dexcent Inc.}{Edmonton, Alb.}
+        \resumeItemListStart
+        \resumeItem{Implemented over 93\% test coverage for a Django REST server, ensuring the quality and reliability of the codebase}
+        \resumeItem{Incorporated Postman to automatically send over 30 calls per day and receive data, testing the functionality of the server and debugging any issues}
+        \resumeItem{Synchronized 10+ test cases per day with an independent codebase inside a git branch while automating test runs}
+        %\resumeItem{Facilitated the development of a robust and scalable server, showcasing skills in Python and Django}
+        %\resumeItem{Demonstrated strong problem-solving and critical thinking skills, identifying and addressing issues in the codebase}
+        \resumeItem{Structured code in a team environment, collaborating with two senior developers to achieve test database coverage}
+        %\resumeItem{Demonstrated the ability to learn and adapt quickly in a fast-paced work environment.}
+          %\resumeItem{Used pytest and requests to test hundreds of URL endpoints in a Django server in Python}
+          %\resumeItem{Used Postman to send and test POST and GET requests to a test server in order to validate data}
+          %\resumeItem{Implemented and worked with Django REST frameworks in order to debug a production and test server}
+          %\resumeItem{Collaborated with a small-scale team by branching a git repository and implementing continuous integration}
+          \resumeItemListEnd
+  
+          
+          
+          
+          \resumeSubHeadingListEnd
+          
+          %-----------PROJECTS-----------
+  \section{Projects}
+  \resumeSubHeadingListStart
+  \resumeProjectHeading
+  {\textbf{Fixify} $|$ \emph{Python, Flask, CSS/HTML, JS, MySQL}}{03/2023 - 05/2023}
+  \resumeItemListStart
+    \resumeItem{Created a Flask application to combat Spotify's removal of songs from its database}
+    \resumeItem{Automatically searches user's playlists and identifies songs that are no longer available to play}
+    \resumeItem{Searches YouTube without the need to make an API call, and downloads the song and its according metadata}
+    \resumeItem{Uses a login database to cache data for a user, as well as a smart LRU caching system to reduce computational load}
+
+    \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Physics Simulator} $|$ \emph{Python}}{08/2022 - 01/2023}
+        \resumeItemListStart
+          \resumeItem{Developed a particle-based physics simulation in Python using pygame and tkinter}
+          \resumeItem{Incorporated 10+ features including object collision, gravity, energy loss, and pressure to mimic real-world conditions}
+          \resumeItem{Leveraged tkinter to create 5 custom widgets and layouts, improving the design and user experience of the program}
+          \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Web Scraping and Audio Compilation Tool} $|$ \emph{Python, Git}}{05/2022 - 07/2022}
+        \resumeItemListStart
+        \resumeItem{Created a Python script to visit a website, download 700+ specific files, and compile those files into an audiobook}
+        %\resumeItem{Utilized libraries such as urllib3 and requests to extract and process data from the website, using intermediate web scraping technologies}
+        %\resumeItem{Conducted effective error handling and debugging strategies to ensure the stability and reliability of the script}
+        %\resumeItem{Demonstrated strong problem-solving and critical thinking skills, adapting the script to meet changes}
+        %\resumeItem{Utilized version control and collaboration best practices, by uploading code to Github}
+        \resumeItem{Included functionality to attach a JPEG cover file to the front cover of each mp3, increasing usability and diversity of files}
+        \resumeItem{Integrated python libraries, including urllib3, glob, eyeD3, and pydub to improve the user interface of the program}
+
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{White Noise Remover} $|$ \emph{Python, Git}}{10/2021 - 12/2021}
+        \resumeItemListStart
+          \resumeItem{Collaborated and led a team of five students to deliver an application within the span of a one day hackathon}
+          \resumeItem{Developed the backend for an application that speeds up quiet portions of an HTML5 video using Python, ffmpeg, and Audio RMS Integrals}
+          %\resumeItem{Created a parsing script to process and analyze volume levels within video files}
+          \resumeItem{Optimized script runtime by 60\% by benchmarking and hashing certain datasets, cutting computation time in half}
+          %\resumeItem{Used git to collaborate with a team to develop and deliver a product on time}
+         %\resumeItem{Wrote code to adjust the speed of the video based on the analysis of the audio,}
+          %\resumeItem{Demonstrated strong communication skills, explaining the technical details and functionality of the backend to a non-technical audience}
+          \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Chess Notation Application} $|$ \emph{Swift}}{05/2021 - 07/2021}
+        \resumeItemListStart
+          \resumeItem{Wrote frontend and backend code for an application that used a camera to support and scan chess notation sheets}
+          \resumeItem{Analyzed images using python and artificial intelligence to process and read files to detect writing in pictures}
+          \resumeItem{Implemented SwiftUI Basics to create a working graphical representation of the application}
+          %\resumeItem{Created a mockup for the application that included use of Apple's CoreData to store data}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript/TypeScript, HTML/CSS, LaTeX} \\
+     \textbf{Frameworks}{: React, VueJS, Flask, Django REST} \\
+     \textbf{Developer Tools}{: Git, Docker, Firebase} \\
+     \textbf{Libraries}{: ffmpeg, numpy, matplotlib, pandas, tensorflow, keras, requests, urllib3, pytest, pydub, Flask, paramiko}\\
+     \textbf{Hobbies}{: Racquetball, High Altitude Mountaineering, Road Cycling, Aerial Cinematography, Video Editing, Bouldering}
+     }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
